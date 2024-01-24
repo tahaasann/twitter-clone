@@ -7,7 +7,20 @@ const initialState = {
         fullName: 'Taha S. Asan',
         avatar: 'https://pbs.twimg.com/profile_images/1746846993165549568/unD8_skJ_400x400.jpg'
     },
-    accounts: []
+    accounts: [
+        {
+            id: 1,
+            username: 'tahaasann',
+            fullName: 'Taha S. Asan',
+            avatar: 'https://pbs.twimg.com/profile_images/1746846993165549568/unD8_skJ_400x400.jpg'
+        },
+        {
+            id: 2,
+            username: 'JPMorgan_BC',
+            fullName: 'John Pierpont Morgan',
+            avatar: 'https://pbs.twimg.com/profile_images/1489952718479372296/R7gU4MLv_400x400.jpg'
+        }
+    ]
 }
 
 const auth = createSlice({

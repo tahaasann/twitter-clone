@@ -15,7 +15,7 @@ export default function Account() {
             <div className="text-[#71767b]">@{account.username}</div>
           </div>
         </Popover.Button>
-        <Popover.Panel className="absolute bottom-full w-[300px] left-1/2 -translate-x-1/2 bg-black shadow-box rounded-2xl">
+        <Popover.Panel className="absolute bottom-full py-3 w-[300px] overflow-hidden left-1/2 -translate-x-1/2 bg-black shadow-box rounded-2xl">
           <More />
           </Popover.Panel>
       </Popover>

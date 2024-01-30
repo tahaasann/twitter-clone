@@ -2,7 +2,7 @@ import { useAccount, useAccounts } from "~/store/auth/hooks";
 import classNames from "classnames";
 import { setCurrentAccount } from "~/store/auth/actions";
 
-export default function More() {
+export default function More({close}) {
   const currentAccount = useAccount();
   const accounts = useAccounts();
 
@@ -14,6 +14,7 @@ export default function More() {
         disabled={currentAccount.id == account.id}
         onClick={() => {
           setCurrentAccount(account)
+          close()
         }}
         className={classNames("py-3 px-4 flex items-center text-left w-full transition-colors ",{
           "hover:bg-[#eff3f41a]": currentAccount.id !== account.id

@@ -29,7 +29,9 @@ export default function Account() {
           leaveTo="transform opacity-0"
         >
           <Popover.Panel className="absolute bottom-[80px] py-3 w-[300px] overflow-hidden left-1/2 -translate-x-1/2 bg-black shadow-box rounded-2xl">
-            <More />
+            {({close}) => (
+              <More close={close}/>
+            )}
           </Popover.Panel>
         </Transition>
       </Popover>
